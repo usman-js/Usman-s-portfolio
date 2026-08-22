@@ -5,7 +5,7 @@ const person: Person = {
   firstName: "Usman",
   lastName: "Ali",
   name: `Usman Ali`,
-  role: "Web developer",
+  role: "Shopify developer",
   avatar: "/images/avatar.jpg",
   email: "theusmanais@gmail.com",
   location: "Asia/Karachi", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -61,12 +61,12 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building web applications to solve real-world problems.</>,
+  headline: <>Building Shopify apps and themes that solve real e-commerce problems.</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Web Developer</strong>{" "}
+        <strong className="ml-4">Shopify Developer</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Featured work
@@ -77,8 +77,8 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm {person.firstName}, a {person.role.toLowerCase()} using{" "}
-      <Text as="span" size="xl" weight="strong">Next.js</Text>, where I create interactive <br /> user experiences. After hours, I build my own projects.
+      I'm {person.firstName}, a {person.role.toLowerCase()} building custom apps and themes with{" "}
+      <Text as="span" size="xl" weight="strong">Shopify</Text>, where I create seamless <br /> shopping experiences. After hours, I build my own projects.
     </>
   ),
 };
@@ -103,13 +103,13 @@ const about: About = {
     display: true,
     title: "Introduction",
     description: (
-      <>
-        {person.firstName} is a Lahore-based {person.role.toLowerCase()} with a passion about turning
-         ideas and complex problems into simple, functional, and engaging digital experiences. 
-         I build modern websites and web applications using technologies
-          like React, Next.js, JavaScript, and Python, with a strong focus 
-          on clean design, usability, and continuous learning.
-      </>
+    <>
+      {person.firstName} is a Lahore-based {person.role.toLowerCase()} with a passion for turning
+       merchant problems into simple, functional, and engaging shopping experiences. 
+       I build custom Shopify apps and themes using technologies
+        like React, Next.js, Liquid, and the Shopify Admin API, with a strong focus 
+        on clean design, usability, and continuous learning.
+    </>
     ),
   },
   work: {
@@ -210,7 +210,34 @@ const about: About = {
       ],
       images: [],
     },
-
+{
+      title: "Shopify App & Theme Development",
+      description: (
+        <>
+          Building custom Shopify apps and themes using Remix, Liquid,
+          Theme App Extensions, and the Shopify Admin API (GraphQL).
+        </>
+      ),
+      tags: [
+        {
+          name: "Remix",
+          icon: "remix",
+        },
+        {
+          name: "Liquid",
+          icon: "liquid",
+        },
+        {
+          name: "Shopify CLI",
+          icon: "shopify",
+        },
+        {
+          name: "GraphQL",
+          icon: "graphql",
+        },
+      ],
+      images: [],
+    },
       {
       title: "Tools & Workflow",
       description: (

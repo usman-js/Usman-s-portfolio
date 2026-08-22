@@ -1,45 +1,42 @@
 ---
-title: "Building Once UI, a Customizable Design System"
-publishedAt: "2026-04-08"
-summary: "Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration."
+title: "Free Shipping — Shopify custom App"
+publishedAt: "2026-08-22"
+summary: "A Shopify Theme App Extension that boosts cart value by showing customers a live progress bar toward free shipping, with a fully customizable merchant admin panel."
 images:
-  - "/images/projects/project-01/cover-01.jpg"
-  - "/images/projects/project-01/cover-02.jpg"
-  - "/images/projects/project-01/cover-03.jpg"
-  - "/images/projects/project-01/cover-04.jpg"
+  - "/images/projects/project-02/cover-01.jpg"
+  - "/images/projects/project-02/cover-02.jpg"
+  - "/images/projects/project-02/cover-03.jpg"
+  - "/images/projects/project-02/cover-04.jpg"
 team:
-  - name: "Selene Yu"
-    role: "Software Engineer"
+  - name: "Usman Ali"
+    role: "Shopify Developer"
     avatar: "/images/avatar.jpg"
-    linkedIn: "https://www.linkedin.com/company/once-ui/"
-  - name: "Lorant One"
-    role: "Design Engineer"
-    avatar: "/images/projects/project-01/avatar-01.jpg"
-    linkedIn: "https://www.linkedin.com/company/once-ui/"
+    linkedIn: "https://www.linkedin.com/in/usman-js/"
 ---
 
 ## Overview
 
-Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration.
+Development of a custom Shopify app that helps merchants increase average order value by motivating customers with a real-time free shipping progress bar on the cart page, paired with a fully configurable admin settings panel.
 
 ## Key Features
 
-- **Component Library**: Built a set of modular, reusable UI components using React and styled-components in Next.js, focusing on accessibility and responsiveness.
-- **Theming and Customization**: Integrated a theming system that allows easy switching and customization of color palettes, typography, and layout styles using CSS variables and Figma tokens.
-- **Figma Integration**: Collaborated closely with designers by setting up a shared design library in Figma. This library was synchronized with the codebase, ensuring design handoffs were seamless and that design tokens remained consistent across both platforms.
-- **Documentation and Usage Guidelines**: Developed comprehensive documentation with Storybook to showcase components, usage patterns, and best practices, ensuring the design system is easy to adopt by other teams.
+- **Live Progress Bar**: Built a dynamic, real-time progress bar as a Theme App Extension, showing customers exactly how much more they need to spend to unlock free shipping.
+- **Dynamic Messaging**: Implemented customizable pre- and post-unlock messages (e.g. "Add $12 more for free shipping!" → "You've unlocked free shipping! 🎉") that update instantly as the cart changes.
+- **Merchant Admin Panel**: Designed a settings interface using Shopify Polaris, allowing merchants to configure the free shipping threshold, custom messages, and progress bar colors — all with a live preview before publishing.
+- **Seamless Storefront Integration**: Used Shopify's Theme App Extension architecture so the feature installs directly into any store's theme without manual code edits.
 
 ## Technologies Used
 
-- **Next.js**: For fast, server-rendered React applications.
-- **Figma**: For creating and managing design assets and prototypes.
-- **Styled-Components**: For styling React components with a modular, themable approach.
-- **Storybook**: For building an interactive, documented component library.
+- **Remix**: For building the app's admin dashboard and backend logic.
+- **Shopify Polaris**: For a native-feeling, accessible merchant admin UI.
+- **Shopify Admin API (GraphQL)**: For reading/writing merchant settings.
+- **Prisma + SQLite/PostgreSQL**: For storing app configuration data.
+- **Shopify CLI & Theme App Extensions**: For storefront integration and local development.
 
 ## Challenges and Learnings
 
-One key challenge was balancing the need for flexibility with the desire to maintain design consistency. The solution involved creating well-defined design tokens and establishing clear guidelines for when and how components could be customized. Additionally, setting up effective collaboration workflows between designers and developers using Figma and Git was a learning experience that greatly improved the process.
+One key challenge was syncing merchant-configured settings in real time between the admin panel and the storefront cart, without slowing down the customer experience. This meant carefully structuring data fetches through the Shopify Admin API and optimizing how the Theme App Extension reads cart state. Working through Polaris's component system — including the distinction between Polaris React components and native web components — was also a valuable learning experience in building production-grade Shopify admin interfaces.
 
 ## Outcome
 
-The design system is now actively used across multiple projects, leading to faster development cycles, fewer design inconsistencies, and improved collaboration between design and development teams. It has become a foundation for scaling our products efficiently while ensuring a cohesive user experience.
+The app delivers a smooth, real-time customer incentive directly on the cart page while giving merchants full control over messaging and design — with no code required. It stands as a practical demonstration of end-to-end Shopify app development, from Admin API integration to customer-facing storefront features.

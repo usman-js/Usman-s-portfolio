@@ -27,7 +27,17 @@ import {
   SiNextdotjs,
   SiFigma,
   SiSupabase,
+  SiShopify,
+  SiRemix,
+  SiGraphql,
+  SiPostgresql,
+  SiHtml5,
+  SiCss3,
+  SiTailwindcss,
+  SiReact,
+  SiGit,
 } from "react-icons/si";
+import { HiOutlineBeaker } from "react-icons/hi2";
 
 import { FaDiscord, FaGithub, FaLinkedin, FaX, FaThreads, FaInstagram, FaXTwitter, FaFacebook, FaPinterest, FaWhatsapp, FaReddit, FaTelegram, } from "react-icons/fa6";
 
@@ -64,6 +74,16 @@ export const iconLibrary: Record<string, IconType> = {
   reddit: FaReddit,
   telegram: FaTelegram,
   instagram: FaInstagram,
+  liquid: HiOutlineBeaker,
+  shopify: SiShopify,
+  remix: SiRemix,
+  graphql: SiGraphql,
+  git: SiGit,
+  postgresql: SiPostgresql,
+  html: SiHtml5,
+  css: SiCss3,
+  tailwind: SiTailwindcss,
+  react: SiReact,
 };
 
 export type IconLibrary = typeof iconLibrary;

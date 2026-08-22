@@ -9,7 +9,7 @@ import {
   Row,
   Text,
 } from "@once-ui-system/core";
-
+import { HiOutlineBeaker } from "react-icons/hi2";
 import {
   SiHtml5,
   SiCss,
@@ -20,6 +20,9 @@ import {
   SiPostgresql,
   SiGit,
   SiGithub,
+  SiShopify,
+  SiRemix,
+  SiGraphql,
 } from "@icons-pack/react-simple-icons";
 
 const stats = [
@@ -30,7 +33,7 @@ const stats = [
     icon: "code",
   },
   {
-    value: "8+",
+    value: "12+",
     label: "Technologies",
     description: "Across frontend and backend",
     icon: "layers",
@@ -57,10 +60,13 @@ const technologies = [
   { name: "React", icon: SiReact },
   { name: "Next.js", icon: SiNextdotjs },
   { name: "PostgreSQL", icon: SiPostgresql },
+  { name: "Liquid", icon: HiOutlineBeaker },
+  { name: "Remix", icon: SiRemix },
+  { name: "Shopify CLI", icon: SiShopify },
+  { name: "GraphQL", icon: SiGraphql },
   { name: "Git", icon: SiGit },
   { name: "GitHub", icon: SiGithub },
 ];
-
 const projects = [
   {
     number: "01",
