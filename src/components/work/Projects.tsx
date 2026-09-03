@@ -4,7 +4,7 @@ import { ProjectCard } from "@/components";
 
 interface ProjectsProps {
   range?: [number, number?];
-  exclude?: string[]
+  exclude?: string[];
 }
 
 export function Projects({ range, exclude }: ProjectsProps) {
